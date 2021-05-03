@@ -1,0 +1,40 @@
+#quickstart{
+  padding-bottom: 5rem;
+
+  .content{
+  }
+
+  .instructions{
+    clear: both;
+    width: span(6 of 12);
+    margin: 0 auto;
+    text-align: center;
+
+    @include breakpoint-mobile(){
+      width: span(4 of 4);
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+  }
+
+  pre{
+    background: #1d0c20;
+    border: 0.2rem solid #68b2f8;
+    padding: 1rem;
+    font-family: monospace;
+
+    @include breakpoint-mobile(){
+      word-wrap:break-word;
+      white-space: pre-wrap;       /* css-3 */
+    }
+  }
+
+  ol{
+    padding: 0;
+    text-align: left;
+  }
+
+  img{
+    width: 100%;
+  }
+}

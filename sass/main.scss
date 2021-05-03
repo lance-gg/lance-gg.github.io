@@ -1,0 +1,84 @@
+@import "./../node_modules/susy/sass/susy";
+@import "./../node_modules/breakpoint-sass/stylesheets/breakpoint";
+@import "./../node_modules/compass-mixins/lib/compass";
+
+@import "layout";
+@import "parallax";
+
+html,body{
+  padding: 0;
+  margin: 0;
+  background: #1d0c24;
+  color: #fff;
+  text-align: center;
+  font-family: "proxima-nova", sans-serif;
+}
+
+section{
+
+  .container{
+
+  }
+}
+
+@import "sections/_splash";
+@import "sections/_gallery";
+@import "sections/_menu";
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#par1{
+  height: 50vh;
+  width: 100%;
+  z-index: -1;
+  display: none;
+
+
+
+  .parallax__layer--back{
+    width: 100vw;
+    height: 90vh;
+    background-image: url(images/game1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translateZ(-1px) scaleX(1.6) scaleY(1.6) translateY(0) ;
+  }
+}
+
+#par2{
+  height: 50vh;
+  width: 100%;
+  z-index: -1;
+
+  .parallax__layer--back{
+    width: 100vw;
+    height: 70vh;
+    background-image: url(images/game2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translateZ(-1px) scaleX(1.5) scaleY(1.5) translateY(0vh) ;
+    z-index: 4;
+  }
+}
+@import "sections/features";
+
+.bottom{
+  background-image: url(images/page_bg.png);
+}
+
+@import "sections/quickstart";
+@import "sections/help";
+@import "sections/about";
+
+#footer{
+  height: 60vw;
+  background-image: url(images/footer_bg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}

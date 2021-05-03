@@ -1,0 +1,31 @@
+{
+  "name": "incheon-site",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "acorn": "^6.1.1",
+    "smooth-scroll": "github:cferdinandi/smooth-scroll",
+    "waypoints": "^4.0.1",
+    "zenscroll": "^3.3.0"
+  },
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.0",
+    "compass-mixins": "^0.12.10",
+    "css-loader": "^1.0.1",
+    "image-webpack-loader": "^3.0.0",
+    "node-sass": "^4",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "susy": "^2.2.12",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --hot --inline",
+    "build": "webpack"
+  },
+  "author": "OpherV",
+  "license": "ISC",
+  "homepage": "http://incheon.gg"
+}

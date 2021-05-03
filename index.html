@@ -1,0 +1,308 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Lance - RealTime. Multiplayer. JavaScript.</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://use.typekit.net/lai1bbe.js"></script>
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
+        <link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
+        <link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+        <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+
+        <meta property="og:title" content="Lance - RealTime. Multiplayer. JavaScript.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://lance.gg">
+        <meta property="og:image" content="http://lance.gg/images/splash_social_small.png">
+        <meta property="og:description" content="Lance is an open source server/library for real-time multiplayer JavasScript games">
+        <meta name="Description"
+              content="Lance is an open source server/library for real-time multiplayer JavasScript games">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@lancegg_">
+        <meta name="twitter:title" content="Lance - RealTime. Multiplayer. JavaScript.">
+        <meta name="twitter:description" content="Lance is an open source server/library for real-time multiplayer JavasScript games">
+        <meta name="twitter:image" content="http://lance.gg/images/splash_social_small.png">
+        <meta name="google-site-verification" content="qaJiHcqNOWwSbHaIKLlWAV4c30sbUgUHdqc7bA5OiIs" />
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "url": "http://lance.gg",
+            "name": "lance.gg",
+            "about":[{
+                  "@context": "http://schema.org",
+                  "@type": "SoftwareApplication",
+                  "name": "Lance",
+                  "description": "Lance is an open source game engine for RealTime JavaScript Multiplayer games.  Lance's primary scope is physics networking, coordinating game object positions for multiple remote players.",
+                  "alternateName": "lance.gg",
+                  "applicationCategory": "Game Server",
+                  "operatingSystem": "Windows OSX Linux Android iOS",
+                  "downloadUrl": "https://github.com/lance-gg/lance",
+                  "featureList": ["game server", "game engine", "extrapolation", "interpolation", "client-side prediction", "physics"],
+                  "screenShot": "https://cloud.githubusercontent.com/assets/3951311/21784604/ffc2d282-d6c4-11e6-97f0-0ada12c4fab7.gif",
+                  "softwareVersion": "1.0.0",
+                  "author": [{
+                    "@type": "Person",
+                    "familyName": "Vishnia",
+                    "givenName": "Opher",
+                    "sameAs": [
+                        "https://twitter.com/OpherV",
+                        "https://github.com/OpherV"
+                    ]
+                  },{
+                    "@type": "Person",
+                    "familyName": "Weiss",
+                    "givenName": "Gary",
+                    "email": "fourvelocity@gmail.com",
+                    "sameAs": [
+                        "https://twitter.com/namel_js",
+                        "https://www.facebook.com/garyweiss74",
+                        "https://github.com/namel"
+                    ]
+                  }]
+              }]
+         }
+         </script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    </head>
+    <body>
+    <section id="outerMenu">
+        <ul>
+            <li><a href="#quickstart">Getting Started</a></li>
+            <li><a href="http://docs.lance.gg">Docs & API</a></li>
+            <li><a href="http://docs.lance.gg/tutorial-introduction_community.html">Community</a></li>
+            <li><a href="https://github.com/lance-gg/lance">Github</a></li>
+        </ul>
+    </section>
+        <div class="siteContainer parallax">
+            <section id="splash" class="parallax__group">
+                <div class="content">
+                    <div class="titleContainer">
+                        <h1>Lance</h1>
+                        <div class="ship1"></div>
+                    </div>
+                    <h3>RealTime. Multiplayer. JavaScript.</h3>
+                    <div class="description">
+                        Lance is a node based game server. Created to enable game developers to build real time online javascript multiplayer games without worrying about implementing net synchronisation code. It strives to provide buttery smooth experience for both developer and player regardless of lag.
+                    </div>
+                    <div class="buttonContainer">
+                        <div class="ctaContainer"><a href="#quickstart">Get Started</a></div>
+                    </div>
+                    <div class="ship2"></div>
+                </div>
+                <div id="innerMenu">
+                    <ul>
+                        <li><a href="#quickstart">Getting Started</a></li>
+                        <li><a href="http://docs.lance.gg">Docs & API</a></li>
+                        <li><a href="http://docs.lance.gg/tutorial-introduction_community.html">Community</a></li>
+                        <li><a href="https://github.com/lance-gg/Lance">Github</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="gallery">
+                <div class="content">
+                    <h3>Built with Lance</h3>
+                    <div class="projects">
+                        <div class="project" style="background-image: url(https://cloud.githubusercontent.com/assets/3951311/21784604/ffc2d282-d6c4-11e6-97f0-0ada12c4fab7.gif);">
+                            <div class="caption">
+                                <div class="title">Spaaace</div>
+                                <div class="description">2D top down shooter with pseudo-physics</div>
+                                <div class="servers">
+                                    <span class="serversCaption">Play Now! Choose server:</span>
+                                    <a href="http://spaaace.lance.gg/index.html?serverURL=spaaace.games-eu.lance.gg">EU</a>
+                                    <a href="http://spaaace.lance.gg/index.html?serverURL=spaaace.games-us.lance.gg">US</a>
+                                </div>
+                                <div class="servers"><a href="https://github.com/lance-gg/spaaace/tree/master">source code</a></div>
+                            </div>
+                        </div>
+                        <div class="project" style="background-image: url(https://user-images.githubusercontent.com/3951311/48661462-c5308080-ea7a-11e8-89e5-b4bb8237fe23.gif);">
+                            <div class="caption">
+                                <div class="title">Asteroids</div>
+                                <div class="description">The classic game - networked! / P2.js physics</div>
+                                <div class="servers">
+                                    <span class="serversCaption">Play Now! Choose server:</span>
+                                    <a href="http://asteroids.lance.gg/index.html?serverURL=asteroids.games-eu.lance.gg">EU</a>
+                                    <a href="http://asteroids.lance.gg/index.html?serverURL=asteroids.games-us.lance.gg">US</a>
+                                </div>
+                                <div class="servers"><a href="https://github.com/lance-gg/tinygames/tree/master/asteroids">source code</a></div>
+                            </div>
+                        </div>
+                        <div class="project" style="background-image: url(https://user-images.githubusercontent.com/3702763/49344224-f0bb8980-f67c-11e8-935c-49fb2f30b566.gif);">
+                            <div class="caption">
+                                <div class="title">Wiggle</div>
+                                <div class="description">Multiplayer Hungry Snakes</div>
+                                <div class="servers">
+                                    <span class="serversCaption">Play Now! Choose server:</span>
+                                    <a href="http://wiggle.lance.gg/index.html?serverURL=wiggle.games-eu.lance.gg">EU</a>
+                                    <a href="http://wiggle.lance.gg/index.html?serverURL=wiggle.games-us.lance.gg">US</a>
+                                </div>
+                                <div class="servers"><a href="https://github.com/lance-gg/tinygames/tree/master/wiggle">source code</a></div>
+                            </div>
+                        </div>
+                        <div class="project" style="background-image: url(https://user-images.githubusercontent.com/3702763/51734551-7e1fc680-208d-11e9-954a-22c3475e8752.gif);">
+                            <div class="caption">
+                                <div class="title">Brawler</div>
+                                <div class="description">Multiplayer Desert Brawler</div>
+                                <div class="servers">
+                                    <span class="serversCaption">Play Now! Choose server:</span>
+                                    <a href="http://brawler.lance.gg/index.html?serverURL=brawler.games-eu.lance.gg">EU</a>
+                                    <a href="http://brawler.lance.gg/index.html?serverURL=brawler.games-us.lance.gg">US</a>
+                                </div>
+                                <div class="servers"><a href="https://github.com/lance-gg/tinygames/tree/master/brawler">source code</a></div>
+                            </div>
+                        </div>
+                        <div class="project" style="background-image: url(https://cloud.githubusercontent.com/assets/3951311/24645643/a48d226a-1921-11e7-88b5-ab5c3741f097.gif);">
+                            <div class="caption">
+                                <div class="title">Sprocket League</div>
+                                <div class="description">Soccer cars / A-Frame, Three.js, Cannon physics</div>
+                                <div class="servers">
+                                    <span class="serversCaption">Play Now! Choose server:</span>
+                                    <a href="http://sleague.lance.gg/index.html?serverURL=sleague.games-eu.lance.gg">EU</a>
+                                    <a href="http://sleague.lance.gg/index.html?serverURL=sleague.games-us.lance.gg">US</a>
+                                </div>
+                                <div class="servers"><a href="https://github.com/lance-gg/sprocketleague/tree/master">source code</a></div>
+                            </div>
+                        </div>
+                        <div class="project" style="background-image: url(https://user-images.githubusercontent.com/3702763/57483827-4e00da00-72b0-11e9-8969-2a30923b085f.gif);">
+                            <div class="caption">
+                                <div class="title">BB-8</div>
+                                <div class="description">3D Physics</div>
+                                <div class="servers"><a href="https://github.com/rateforx/BB-8">source code</a></div>
+                            </div>
+                        </div>
+                        <div class="project" style="background-image: url(https://user-images.githubusercontent.com/3702763/57478637-1b50e480-72a4-11e9-9877-d244dedd20e7.gif);">
+                            <div class="caption">
+                                <div class="title">Broken Blades</div>
+                                <div class="description">Platform Fighter</div>
+                            </div>
+                        </div>
+                        <div class="project" style="background-image: url(https://user-images.githubusercontent.com/3702763/57478937-eabd7a80-72a4-11e9-93d4-62cc8cc2573f.gif);">
+                            <div class="caption">
+                                <div class="title">Broken Blades with Monsters</div>
+                                <div class="description">Platform Fighter</div>
+                            </div>
+                        </div>
+                        <div class="project" style="background-image: url(https://user-images.githubusercontent.com/3702763/57482067-5a833380-72ac-11e9-8a36-3a875ececa36.gif);">
+                            <div class="caption">
+                                <div class="title">Abber Smash</div>
+                                <div class="description">2D Space Shooter</div>
+                            </div>
+                        </div>
+                        <div class="project" style="background-image: url(https://user-images.githubusercontent.com/3702763/57482338-0cbafb00-72ad-11e9-9eb5-e08dd3904f77.gif);">
+                            <div class="caption">
+                                <div class="title">Bobbles</div>
+                                <div class="description">2D Platform Bubble</div>
+                            </div>
+                        </div>
+
+
+                        <a href="http://www.twitter.com/LanceGG_" class="project" style="background-image: url(https://cloud.githubusercontent.com/assets/3951311/24646614/48731ee0-1925-11e7-86e5-568fc8acb196.gif);">
+                            <div class="caption">
+                                <div class="title">Your game</div>
+                                <div class="description">Built something cool with Lance? <br> Let us know and we'll put it here!</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="par1" class="parallax__group">
+                <div class="parallax__layer parallax__layer--back"></div>
+            </section>
+            <section id="features" class="parallax__group">
+                <div class="shot parallax__layer"></div>
+                <div class="content">
+                    <h3>Features</h3>
+                    <div class="featureContainer">
+                        <div class="feature gameAgnostic">
+                            <div class="title">Game-agnostic</div>
+                            <div class="text">Arcade, RTS, Physics-based puzzlers, FPS - Lance can power them all</div>
+                        </div>
+                        <div class="feature lag">
+                            <div class="title">Intelligent lag handling</div>
+                            <div class="text">Synchronisation methods for different types of games (interpolation\extrapolation\lockstep)</div>
+                        </div>
+                        <div class="feature physics">
+                            <div class="title">Supports physics engines</div>
+                            <div class="text">Cannon.js/built in pseudo physics</div>
+                        </div>
+                        <div class="feature architecture">
+                            <div class="title">Future-centric architecture</div>
+                            <div class="text">ES6-focused, extendable</div>
+                        </div>
+                        <div class="feature binary">
+                            <div class="title">Smart Binary serialization</div>
+                            <div class="text">Minimize the data that goes over the wire</div>
+                        </div>
+                        <div class="feature opensource">
+                            <div class="title">Open source community driven</div>
+                            <div class="text">Run your own server!</div>
+                        </div>
+                    </div>
+                    <div class="roadmap">To see a full list of planned features, check out the <a href="http://docs.lance.gg/tutorial-introduction_roadmap.html">development roadmap</a></div>
+                </div>
+            </section>
+            <section id="par2" class="parallax__group">
+                <div class="parallax__layer parallax__layer--back"></div>
+            </section>
+            <div class="bottom">
+                <section id="quickstart" class="parallax__group">
+                    <div class="content">
+                        <h3>QuickStart</h3>
+                        <div class="instructions">
+                            <ol>
+                                <li>
+                                    <p>From the command line run</p>
+
+                                    <pre>> git clone https://github.com/lance-gg/tinygames.git
+> cd tinygames/pong
+> npm install
+> npm start</pre>
+                                </li>
+                                <li>
+                                    <p>Open two browser tabs, and point them to http://localhost:3000
+                                    You now have a working multiplayer version of Pong to play with!</p>
+
+                                </li>
+                            </ol>
+                            <img src="images/netpong.gif">
+                            <p>Wonder where to start to building such a project yourself? Check out the <a href="http://docs.lance.gg/">Getting Started</a> guide</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="help" class="parallax__group">
+                    <div class="content">
+                        <h3>Lost?</h3>
+                        <div class="helpContainer">
+                            <a href="https://github.com/lance-gg/lance/issues" class="icon-github">Bug?</a>
+                            <a href="http://stackoverflow.com/questions/tagged/lance" class="icon-stack-overflow">Question?</a>
+                            <a href="http://www.twitch.tv/lancegg_" class="icon-twitch">Watch</a>
+                            <a href="http://lancegg-slack.herokuapp.com/" class="icon-slack">Say hi</a>
+                        </div>
+                    </div>
+                </section>
+                <section id="footer">
+                    <div class="content"></div>
+                </section>
+            </div>
+        </div>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-2524771-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+        <script src="dist_bundles/bundle.js"></script>
+    </body>
+</html>

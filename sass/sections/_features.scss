@@ -1,0 +1,138 @@
+#features{
+  background: #751a62;
+
+  .content{
+    box-sizing: border-box;
+    width: span(8 of 12);
+    @include breakpoint-mobile() {
+      width: span(8 of 4);
+    }
+
+    @include breakpoint-mobile-landscape() {
+      width: span(8 of 4);
+    }
+
+    @include breakpoint-tablet() {
+      width: span(8 of 8);
+    }
+    margin: 0 auto;
+  }
+
+  .featureContainer{
+    padding-left: span(2 of 12);
+
+    @include breakpoint-tablet() {
+      padding-top: 2rem;
+    }
+
+    @include breakpoint-mobile() {
+      padding: 0;
+    }
+
+    @include breakpoint-mobile-landscape() {
+      padding: 0;
+    }
+
+  }
+
+  .roadmap{
+    clear: both;
+  }
+
+  .feature{
+    position: relative;
+    padding-left: 4.5rem;
+    @include span (4 of 12);
+    text-align: left;
+    margin-bottom: 4rem;
+    padding-right: 1rem;
+
+    @include breakpoint-mobile() {
+      @include span(3 of 4);
+      padding-left: span(1 of 4);
+      margin: 2rem 0rem;
+    }
+
+    @include breakpoint-mobile-landscape() {
+      @include span(3 of 4);
+      padding-left: span(1 of 4);
+      margin: 2rem 0rem;
+    }
+  }
+
+
+  .title{
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding-bottom: 0.3rem;
+  }
+
+  .text{
+    font-size: 0.9rem;
+    text-align: j;
+  }
+
+  .feature:before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0.3rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    @include breakpoint-mobile(){
+      width: 3rem;
+      height: 3rem;
+    }
+
+    @include breakpoint-mobile-landscape(){
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  .feature.gameAgnostic:before{
+    background-image: url(images/icons/phantom.svg);
+  }
+
+  .feature.physics:before{
+    background-image: url(images/icons/rpg-game.svg);
+    left: 0.4rem;
+  }
+
+  .feature.binary:before{
+    background-image: url(images/icons/logic-game.svg);
+    left: 0.2rem;
+  }
+
+  .feature.lag:before{
+    background-image: url(images/icons/online-game.svg);
+  }
+
+  .feature.architecture:before{
+    background-image: url(images/icons/arcade.svg);
+  }
+
+  .feature.opensource:before{
+    background-image: url(images/icons/multiplayer.svg);
+  }
+
+  .shot{
+    transform: translateZ(2px) scaleX(1) scaleY(1);
+    height: 20vw;
+    width: 10vw;
+    position: absolute;
+    top: 0;
+    left: 33%;
+    z-index: 20;
+
+    background-image: url(images/shot1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+}
